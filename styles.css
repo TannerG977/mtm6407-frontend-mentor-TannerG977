@@ -130,7 +130,6 @@ h2:hover {
     }
 
     .desktopnav {
-        display: inline-block;
         float: inline-end;
     }
 
@@ -217,6 +216,10 @@ h2:hover {
         margin-right: 20px;
     }
 
+    .mobilenav {
+        display: none;
+    }
+
 
 }
 
@@ -224,6 +227,37 @@ h2:hover {
 /* Mobile Styles*/
 
 @media only screen and (max-width: 600px) {
+
+    .mobilenav {
+        display: none;
+        position: fixed;
+        font-family: "Inter", sans-serif;  
+        line-height: 3;
+        font-size: 1.2rem;
+        font-weight: light;
+        background-color: white;
+        width: 60%;
+        height: 100%;
+        z-index: 99;
+        text-align: right;
+        transform: translate(60%);
+    }
+
+    .exitbtn {
+        display: block;
+        margin-left: auto;
+        padding-bottom: 50px;
+        margin-right: 10px;
+        padding-right: 20px;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+
+    li {
+        list-style-type: none;
+        text-align: left;
+    }
+
 
     .logo {
         margin-top: 30px;
@@ -252,6 +286,10 @@ h2:hover {
 
     .bannerdesktop {
         display: none;
+    }
+
+    .menu-icon:hover {
+        cursor: pointer;
     }
 
 
